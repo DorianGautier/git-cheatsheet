@@ -1,11 +1,15 @@
-1. Initialiser git
-2. Comment envoyer un fichier sur son dêpot GIT
-3. Le fichier .gitignore
-4. La collaboration avec git
-5. Git reset
-6. Git stash
-7. Git tag
-
+```html
+<h1>SOMMAIRE</h1>
+<ol>
+<li>Initialiser git</li>
+<li>Comment envoyer un fichier sur son dêpot GIT</li>
+<li>Le fichier .gitignore</li>
+<li>La collaboration avec git</li>
+<li>Git reset</li>
+<li>Git stash</li>
+<li>Git tag</li>
+<ol>
+```
 
 ## Initialiser git
 
