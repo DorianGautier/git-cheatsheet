@@ -21,12 +21,24 @@ Dans un second temps, voyons comment envoyer ses fichiers et ses répertoires su
 
 Pour envoyer vos fichiers/répertoires sur GitHub il faut suivre plusieurs étapes :
 ```git
-git status
+git status : permet de visualiser quel est l'état du repository.
 ```
- : permet de visualiser quel est l'état du repository.
-git add fichiers repertoires : permet d'indiquer que ces fichiers/répertoires doivent être ajouter au repository.
+```git
+git add [fichiers ou repertoires] : permet d'indiquer que ces fichiers/répertoires doivent être ajouter au repository.
+```
+```git
 git commit -m "Un commentaire" : permet de valider le ou les git add effectué avant.
+```
+```gitGraph
+    commit
+    commit
+```
+```git
 git push : permet d'envoyer vos commits en attentes sur GitHub.
+```
+
+
+
 
 Le fichier .gitignore
 
