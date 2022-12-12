@@ -27,6 +27,52 @@ Afin de pouvoir récupérer votre projet sur votre appareil en local, on utilise
   git clone [lien HTTPS ou bien lien SSH]
 ```
 
+## La collaboration avec git
+
+Il est important de créer une autre branche afin de pouvoir travailler sur une version ou une partie du projet en évitant les conflits lors des pulls vus précedemment.
+
+Tout d'abord, voir si d'autres branches existent déjà sur le projet.
+
+```git
+  git branch
+```
+
+La branche par défaut est la branche "main" ou bien "master".
+Pour créer une autre branche, on utilise la commande suivante : 
+
+```git
+  git branch [nom de la branche]
+```
+```mermaid
+gitGraph
+    commit
+    commit
+    branch develop
+    commit
+    commit
+```
+Et pour changer de branche, on utilise la commande suivante : 
+
+```git
+  git checkout [nom de la branche]
+```
+
+Sinon en une seule commande :
+
+```git
+  git checkout -b [nom de la branche]
+```
+
+```mermaid
+gitGraph
+    commit
+    commit
+    branch develop
+    checkout develop
+    commit
+    commit
+    checkout main
+```
 ## Livraison de l'exercice
 
 En fin de journée, réaliser une merge request au formateur. 
