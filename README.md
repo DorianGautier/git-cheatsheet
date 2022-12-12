@@ -1,3 +1,12 @@
+1. Initialiser git
+2. Comment envoyer un fichier sur son dêpot GIT
+3. Le fichier .gitignore
+4. La collaboration avec git
+5. Git reset
+6. Git stash
+7. Git tag
+
+
 ## Initialiser git
 
 Pour initialiser git sur votre appareil en local et pour créer le dossier caché .git qui servira de base à votre projet git, il faut donc taper la commande suivante sur le dossier voulu :
