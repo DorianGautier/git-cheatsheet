@@ -61,13 +61,6 @@ $ git reset --hard [commit]
 Supprime tout l'historique et les modifications effectuées après le
 commit spécifié 
 
-LES ÉTATS : GIT STASH
-git stash Sauve l'état des modifications. Pour mettre un nom sous cet état on utilise git stash save "stash name" && git stash. 
-git stash pop
-git stash listListe tous les états de modifications.
-
-
-
 
 ## Les Etats : Git stash
 La commande git stash permet de mettre de côté des modifications non commitées dans votre dépôt Git local. Cela peut être utile lorsque vous souhaitez basculer sur une autre branche pour travailler sur un autre aspect du projet, sans perdre vos modifications en cours.
@@ -86,6 +79,10 @@ git checkout <nom de la branche>.
 
 4. Une fois que vous avez terminé de travailler sur la nouvelle branche, vous pouvez utiliser la commande git stash pop pour réappliquer les modifications mises de côté précédemment sur votre répertoire de travail local.
 Notez que la commande git stash ne modifie pas le dépôt Git distant, elle ne concerne que les modifications locales sur votre ordinateur.
+```git
+git stash pop
+```
+Quelque commande avec stash
 
 ```git
 $ git stash
@@ -95,12 +92,7 @@ Enregistre l'état des modifications. Pour mettre un nom sous cet état on utili
 ```git
 $ git stash list
 ```
-Liste toutes les remises
-
-```git
-$ git stash pop
-```
-Récupère l'état des modifications.  
+Liste toutes les remises 
 
 ```git
 $ git stash drop
