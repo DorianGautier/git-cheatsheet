@@ -39,6 +39,50 @@ git commit -m "Un commentaire" : permet de valider le ou les git add effectué a
 ```git
 git push : permet d'envoyer vos commits en attentes sur GitHub.
 ```
+
+## La collaboration avec git
+
+Il est important de créer une autre branche afin de pouvoir travailler sur une version ou une partie du projet en évitant les conflits lors des pulls vus précedemment.
+
+Tout d'abord, voir si d'autres branches existent déjà sur le projet.
+
+```git
+  git branch
+```
+
+La branche par défaut est la branche "main" ou bien "master".
+Pour créer une autre branche, on utilise la commande suivante : 
+
+```git
+  git branch [nom de la branche]
+```
+```mermaid
+gitGraph
+    branch develop
+    checkout develop
+```
+Et pour changer de branche, on utilise la commande suivante : 
+
+```git
+  git checkout [nom de la branche]
+```
+
+Sinon en une seule commande :
+
+```git
+  git checkout -b [nom de la branche]
+```
+
+```mermaid
+gitGraph
+    commit
+    commit
+    branch develop
+    checkout develop
+    commit
+    commit
+    checkout main
+```
 ## Livraison de l'exercice
 
 En fin de journée, réaliser une merge request au formateur. 
