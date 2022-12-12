@@ -88,7 +88,43 @@ $ git stash drop
 ```
 Supprime la remise la plus récente
 
+## ÉTIQUETAGE : GIT TAG
 
+Liste tous les tags.
+```git
+git tag
+```
 
+Permet de rechercher dans les tags : git tag -l. 
+```git
+git tag -l
+```
+
+Ajoute le tag (tag) avec le message associé. (Peut aussi être utilisé sous la forme légère : git tag (votre tag))
+On peut étiqueter un commit de cette façon git tag -a (votre tag).
+```git
+git tag -a (tag) -m 'ma version 1.2'
+```
+
+Affiche le (tag) et les informations associées.
+```git
+git show (tag)
+```
+
+Pousse/Récupère tous les tags sur ou du le repo. Pour pousser 1 seul tag : git push origin (votre tag).
+```git
+git push --tags
+git pull --tags
+```
+
+Supprime un tag en local.
+```git
+git tag -d (votre tag)
+```
+
+Supprime un (tag) sur le (repo).
+```git
+git push (repo) --delete (tag)
+```
 
 
