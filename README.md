@@ -15,7 +15,7 @@ Le livrable final attendu :
 
 
 
-Comment envoyer un fichier sur son dêpot GIT
+## Comment envoyer un fichier sur son dêpot GIT
 
 Dans un second temps, voyons comment envoyer ses fichiers et ses répertoires sur GitHub, cette étape est a répété autant de fois que nécessaire.
 
@@ -37,7 +37,7 @@ git commit -m "Un commentaire" : permet de valider le ou les git add effectué a
 git push : permet d'envoyer vos commits en attentes sur GitHub.
 ```
 
-Le fichier .gitignore
+## Le fichier .gitignore
 
 Un fichier global .gitignore permet de s’assurer que Git ne valide pas certains types de fichiers, tels que des fichiers binaires compilés, dans un référentiel local. Pour cela il suffit d'ajouter le nom du fichier/dossier que vous ne voulez pas ajouter ou vous pouvez ignorer toutes les extension en mettant un point devant le nom de l'extension example .env
 
