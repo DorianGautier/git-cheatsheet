@@ -13,10 +13,19 @@ Le livrable final attendu :
 - Pour chaque instruction, il est attendu d'avoir une description textuelle
 - Pour chaque section il est attendu d'avoir un petit graph mermaid
 
+## Initialiser git
 
+Pour initialiser git sur votre appareil en local et pour créer le dossier caché .git qui servira de base à votre projet git, il faut donc taper la commande suivante sur le dossier voulu :
 
+```git
+  git init
+```
 
+Afin de pouvoir récupérer votre projet sur votre appareil en local, on utilise la commande suivante :
 
+```git
+  git clone [lien HTTPS ou bien lien SSH]
+```
 
 ## Livraison de l'exercice
 
