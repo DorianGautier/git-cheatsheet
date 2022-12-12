@@ -30,9 +30,15 @@ Dans un second temps, voyons comment envoyer ses fichiers et ses répertoires su
 ```git
 git status : permet de visualiser quel est l'état du repository.
 ```
+```git
 git add fichiers repertoires : permet d'indiquer que ces fichiers/répertoires doivent être ajouter au repository.
+```
+```git
 git commit -m "Un commentaire" : permet de valider le ou les git add effectué avant.
+```
+```git
 git push : permet d'envoyer vos commits en attentes sur GitHub.
+```
 ## Livraison de l'exercice
 
 En fin de journée, réaliser une merge request au formateur. 
