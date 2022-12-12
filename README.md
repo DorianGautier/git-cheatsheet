@@ -20,58 +20,24 @@ Pour initialiser git sur votre appareil en local et pour créer le dossier cach�
 ```git
   git init
 ```
-
 Afin de pouvoir récupérer votre projet sur votre appareil en local, on utilise la commande suivante :
 
 ```git
   git clone [lien HTTPS ou bien lien SSH]
 ```
 
-## La collaboration avec git
-
-Il est important de créer une autre branche afin de pouvoir travailler sur une version ou une partie du projet en évitant les conflits lors des pulls vus précedemment.
-
-Tout d'abord, voir si d'autres branches existent déjà sur le projet.
-
+Dans un second temps, voyons comment envoyer ses fichiers et ses répertoires sur GitHub, cette étape est a répété autant de fois que nécessaire.
 ```git
-  git branch
+git status : permet de visualiser quel est l'état du repository.
 ```
-
-La branche par défaut est la branche "main" ou bien "master".
-Pour créer une autre branche, on utilise la commande suivante : 
-
 ```git
-  git branch [nom de la branche]
+git add [fichiers ou repertoires] : permet d'indiquer que ces fichiers/répertoires doivent être ajouter au repository.
 ```
-```mermaid
-gitGraph
-    commit
-    commit
-    branch develop
-    commit
-    commit
-```
-Et pour changer de branche, on utilise la commande suivante : 
-
 ```git
-  git checkout [nom de la branche]
+git commit -m "Un commentaire" : permet de valider le ou les git add effectué avant.
 ```
-
-Sinon en une seule commande :
-
 ```git
-  git checkout -b [nom de la branche]
-```
-
-```mermaid
-gitGraph
-    commit
-    commit
-    branch develop
-    checkout develop
-    commit
-    commit
-    checkout main
+git push : permet d'envoyer vos commits en attentes sur GitHub.
 ```
 
 ## La collaboration avec git
@@ -117,6 +83,7 @@ gitGraph
     commit
     checkout main
 ```
+
 ## Livraison de l'exercice
 
 En fin de journée, réaliser une merge request au formateur. 
