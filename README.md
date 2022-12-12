@@ -20,8 +20,10 @@ Comment envoyer un fichier sur son dêpot GIT
 Dans un second temps, voyons comment envoyer ses fichiers et ses répertoires sur GitHub, cette étape est a répété autant de fois que nécessaire.
 
 Pour envoyer vos fichiers/répertoires sur GitHub il faut suivre plusieurs étapes :
-
-git status : permet de visualiser quel est l'état du repository.
+```git
+git status
+```
+ : permet de visualiser quel est l'état du repository.
 git add fichiers repertoires : permet d'indiquer que ces fichiers/répertoires doivent être ajouter au repository.
 git commit -m "Un commentaire" : permet de valider le ou les git add effectué avant.
 git push : permet d'envoyer vos commits en attentes sur GitHub.
