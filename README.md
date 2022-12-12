@@ -15,7 +15,20 @@ Le livrable final attendu :
 
 
 
+Comment envoyer un fichier sur son dêpot GIT
 
+Dans un second temps, voyons comment envoyer ses fichiers et ses répertoires sur GitHub, cette étape est a répété autant de fois que nécessaire.
+
+Pour envoyer vos fichiers/répertoires sur GitHub il faut suivre plusieurs étapes :
+
+git status : permet de visualiser quel est l'état du repository.
+git add fichiers repertoires : permet d'indiquer que ces fichiers/répertoires doivent être ajouter au repository.
+git commit -m "Un commentaire" : permet de valider le ou les git add effectué avant.
+git push : permet d'envoyer vos commits en attentes sur GitHub.
+
+Le fichier .gitignore
+
+Un fichier global .gitignore permet de s’assurer que Git ne valide pas certains types de fichiers, tels que des fichiers binaires compilés, dans un référentiel local. Pour cela il suffit d'ajouter le nom du fichier/dossier que vous ne voulez pas ajouter ou vous pouvez ignorer toutes les extension en mettant un point devant le nom de l'extension example .env
 
 
 ## Livraison de l'exercice
@@ -25,3 +38,6 @@ En fin de journée, réaliser une merge request au formateur.
   - Ainsi un commit par fonctionnalité présentée
   - Utilisation des branches
   - Une feature par fonctionnalité
+
+
+
