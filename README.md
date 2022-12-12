@@ -61,6 +61,29 @@ $ git reset --hard [commit]
 Supprime tout l'historique et les modifications effectuées après le
 commit spécifié 
 
+## ENREGISTRER DES FRAGMENTS
+Mettre en suspens des modifications non finies pour y revenir plus tard
+
+```git
+$ git stash
+```
+Enregistre de manière temporaire tous les fichiers sous suivi de version
+qui ont été modifiés ("remiser son travail")
+
+```git
+$ git stash list
+```
+Liste toutes les remises
+
+```git
+$ git stash pop
+```
+Applique une remise et la supprime immédiatement
+
+```git
+$ git stash drop
+```
+Supprime la remise la plus récente
 
 
 
