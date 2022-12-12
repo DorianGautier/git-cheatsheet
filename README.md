@@ -47,20 +47,26 @@ git push : permet d'envoyer vos commits en attentes sur GitHub.
 Un fichier global .gitignore permet de s’assurer que Git ne valide pas certains types de fichiers, tels que des fichiers binaires compilés, dans un référentiel local. Pour cela il suffit d'ajouter le nom du fichier/dossier que vous ne voulez pas ajouter ou vous pouvez ignorer toutes les extension en mettant un point devant le nom de l'extension example .env
 
 
-## REFAIRE DES COMMITS
+## GIT RESET
 
-Corriger des erreurs et gérer l'historique des corrections
+Réinitialise la zone de préparation pour qu'elle corresponde à la validation la plus récente, mais laisse le répertoire de travail inchangé.
 ```git
-$ git reset [commit]
+git reset
 ```
-Annule tous les commits après [commit], en conservant les
-modifications localement
-```git
-$ git reset --hard [commit]
-```
-Supprime tout l'historique et les modifications effectuées après le
-commit spécifié 
 
+Réinitialise la zone de préparation et le répertoire de travail pour correspondre à la validation la plus récente et écrase toutes les modifications dans le répertoire de travail.
+```git
+git reset --hard
+```
+
+Déplace le curseur de la branche actuelle vers (commit), réinitialise la zone de préparation mais laisse le répertoire de travail en l'état. Les fichiers et répertoires ne sont pas supprimés.
+```git
+git reset (commit)
+```
+Identique à la précédente, mais réinitialise à la fois la zone de préparation et le répertoire de travail. Les fichiers et répertoires sont supprimés.
+```git
+git reset --hard (commit)
+```
 
 ## Les Etats : Git stash
 La commande git stash permet de mettre de côté des modifications non commitées dans votre dépôt Git local. Cela peut être utile lorsque vous souhaitez basculer sur une autre branche pour travailler sur un autre aspect du projet, sans perdre vos modifications en cours.
