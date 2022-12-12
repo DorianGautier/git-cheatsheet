@@ -1,3 +1,12 @@
+1. Initialiser git
+2. Comment envoyer un fichier sur son dêpot GIT
+3. Le fichier .gitignore
+4. La collaboration avec git
+5. Git reset
+6. Git stash
+7. Git tag
+
+
 ## Comment envoyer un fichier sur son dêpot GIT
 
 Dans un second temps, voyons comment envoyer ses fichiers et ses répertoires sur GitHub, cette étape est a répété autant de fois que nécessaire.
