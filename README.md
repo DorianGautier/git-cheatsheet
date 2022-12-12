@@ -20,13 +20,19 @@ Pour initialiser git sur votre appareil en local et pour créer le dossier cach�
 ```git
   git init
 ```
-
 Afin de pouvoir récupérer votre projet sur votre appareil en local, on utilise la commande suivante :
 
 ```git
   git clone [lien HTTPS ou bien lien SSH]
 ```
 
+Dans un second temps, voyons comment envoyer ses fichiers et ses répertoires sur GitHub, cette étape est a répété autant de fois que nécessaire.
+```git
+git status : permet de visualiser quel est l'état du repository.
+```
+git add fichiers repertoires : permet d'indiquer que ces fichiers/répertoires doivent être ajouter au repository.
+git commit -m "Un commentaire" : permet de valider le ou les git add effectué avant.
+git push : permet d'envoyer vos commits en attentes sur GitHub.
 ## Livraison de l'exercice
 
 En fin de journée, réaliser une merge request au formateur. 
