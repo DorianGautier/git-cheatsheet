@@ -1,4 +1,3 @@
-```html
 <h1>SOMMAIRE</h1>
 <ol>
 <li>Initialiser git</li>
@@ -9,7 +8,7 @@
 <li>Git stash</li>
 <li>Git tag</li>
 <ol>
-```
+
 
 ## Initialiser git
 
